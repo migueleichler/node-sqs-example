@@ -1,0 +1,24 @@
+{
+  "name": "sqs-example",
+  "version": "1.0.0",
+  "description": "Sample application that consumes SQS queues",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/migueleichler/node-sqs-example.git"
+  },
+  "author": "Miguel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/migueleichler/node-sqs-example/issues"
+  },
+  "homepage": "https://github.com/migueleichler/node-sqs-example#readme",
+  "dependencies": {
+    "aws-sdk": "^2.799.0",
+    "sqs-consumer": "^5.5.0"
+  }
+}
