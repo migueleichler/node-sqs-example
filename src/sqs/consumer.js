@@ -17,7 +17,7 @@ function startConsumers(topics) {
 
   for (let i = 0; i < topics.length; i++) {
 
-    const consumer = createConsumer(topics[i])
+    const consumer = createConsumer(topics[i]);
 
     consumer.on('error', (err) => {
       console.error(err.message);
