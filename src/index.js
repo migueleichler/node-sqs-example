@@ -1,11 +1,11 @@
-const consumer = require('./sqs/consumer')
+const startConsumers = require('./sqs/consumer')
 const SaleTopic = require('./subs/sale')
 const PayTopic = require('./subs/pay')
 
-const queuesUrls = []
+const topics = []
 
 
-queuesUrls.push(new SaleTopic())
-queuesUrls.push(new PayTopic())
+topics.push(new SaleTopic())
+topics.push(new PayTopic())
 
-consumer.startConsumers(queuesUrls)
+startConsumers(topics)

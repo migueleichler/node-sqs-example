@@ -13,11 +13,11 @@ function createConsumer(consumer) {
 }
 
 
-function startConsumers(consumers) {
+function startConsumers(topics) {
 
-  for (let i = 0; i < consumers.length; i++) {
+  for (let i = 0; i < topics.length; i++) {
 
-    const consumer = createConsumer(consumers[i])
+    const consumer = createConsumer(topics[i])
 
     consumer.on('error', (err) => {
       console.error(err.message);
@@ -35,4 +35,4 @@ function startConsumers(consumers) {
   }
 }
 
-module.exports = {startConsumers}
+module.exports = startConsumers
